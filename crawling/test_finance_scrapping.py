@@ -3,7 +3,7 @@ import urllib3
 from bs4 import BeautifulSoup as soup
 urllib3.disable_warnings()
 
-if __name__ == '__main__':
+def execute_google_finance():
     baseurl = 'https://www.google.com/finance/quote/'
     ticker = ['NVDA:NASDAQ']
 
@@ -22,3 +22,7 @@ if __name__ == '__main__':
         resultarray.append([idxname, idxvalue])
 
     print(resultarray)
+
+
+if __name__ == '__main__':
+    execute_google_finance()
