@@ -14,7 +14,7 @@ def execute_stock_to_plt(dts):
 
     plt.figure(figsize=(10, 4))
     plt.plot(df['Date'], df['Close'])
-    plt.xlabel('')
+    plt.xlabel('date')
     plt.ylabel('close')
     plt.tick_params(
         axis='x',
