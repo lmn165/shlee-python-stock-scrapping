@@ -1,6 +1,6 @@
-if __name__ == '__main__':
+if __name__ == "__main__":
 
-    file = open('./data/엔비디아/001/article_202206022001.txt', 'r', encoding='utf-8')
+    file = open("./data/엔비디아/001/article_202206022001.txt", "r", encoding="utf-8")
     text = file.read()
     wordList = text.split()
     wordCount = {}
@@ -9,4 +9,4 @@ if __name__ == '__main__':
         keys = sorted(wordCount.keys())
 
     for word in keys:
-        print(f'{word} : {wordCount[word]}')
+        print(f"{word} : {wordCount[word]}")
